@@ -1,0 +1,98 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    line-height: var(--line-height-none);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    transition:
+        background-color var(--transition-default),
+        border-color var(--transition-default),
+        color var(--transition-default),
+        box-shadow var(--transition-default),
+        transform var(--transition-fast);
+}
+.button:hover {
+    transform: scale(1.02);
+}
+.button:focus-visible {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+}
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.primary {
+    background-color: var(--color-bg-accent);
+    color: var(--color-text-light);
+}
+
+.primary:hover {
+    background-color: color-mix(in srgb, var(--color-brand-primary) 88%, black);
+    
+}
+
+.primary:active {
+    background-color: color-mix(in srgb, var(--color-bg-accent) 78%, black);
+}
+
+.secondary {
+    background-color: var(--color-brand-tertiary);
+    color: var(--color-text-light);
+}
+.secondary:hover {
+    background-color: var(--color-brand-secondary);
+    color: var(--color-text-light);
+   
+}
+.secondary:active {
+    background-color: color-mix(in srgb, var(--color-brand-tertiary) 88%, black);
+} 
+
+.tertiary {
+    background-color: var(--color-brand-accent);
+    color: var(--color-text-light);
+}
+
+.tertiary:hover {
+    background-color: var(--color-brand-accent-hover);
+    color: var(--color-text-light);
+   
+}
+.tertiary:active {
+    background-color: color-mix(in srgb, var(--color-brand-accent) 88%, black);
+} 
+
+/* ========================================== SIZES ========================================== */
+.sm {
+    min-height: 32px;
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-sm);
+}
+.md {
+    min-height: 40px;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: var(--font-size-md);
+}
+.lg {
+    min-height: 48px;
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-lg);
+} 
+
+/* ========================================== ICON ========================================== */
+.button > svg {
+    flex-shrink: 0;
+    width: 1.125em;
+    height: 1.125em;
+}

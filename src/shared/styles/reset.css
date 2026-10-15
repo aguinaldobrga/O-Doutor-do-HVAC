@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scrollbar-color: #007bff #f1f1f1; 
+  scrollbar-width: auto; 
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  color: var(--color-text-light);
+  background-color: var(--color-brand-primary);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none; 
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+html {
+  scrollbar-color: #007bff #f1f1f1; 
+  scrollbar-width: auto; 
+}
+
+/* --- Compatibilidade com Navegadores Antigos (Chrome, Safari, Edge) --- */
+/* 1. Define a largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px;               /* Largura da barra vertical */
+  height: 12px;              /* Altura da barra horizontal */
+}
+
+/* 2. Define o fundo da barra de rolagem (Track) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;       /* Cor de fundo */
+  border-radius: 10px;       /* Bordas arredondadas */
+}
+
+/* 3. Define o indicador que se move (Thumb) */
+::-webkit-scrollbar-thumb {
+  background: #007bff;       /* Cor do indicador */
+  border-radius: 10px;       /* Bordas arredondadas */
+  border: 3px solid #f1f1f1; /* Cria um espaçamento ao redor do indicador */
+}
+
+/* 4. Efeito de hover (quando passa o mouse no indicador) */
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;       /* Cor mais escura no hover */
+}

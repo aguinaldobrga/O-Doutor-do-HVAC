@@ -1,0 +1,98 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  /* Brand Colors */
+  --color-brand-primary: #0A182D;
+  --color-brand-secondary: #0084FF;
+  --color-brand-tertiary: #2DB1F9;
+  --color-brand-accent: #FF6B00;
+  --color-brand-accent-hover: #E05E00;
+
+  /* Surfaces & Backgrounds */
+  --color-bg-main: #F8FAFC;
+  --color-bg-dark: #07111E;
+  --color-bg-accent: #1B273A;
+  --color-surface-white: #FFFFFF;
+  --color-surface-muted: #EDF2F7;
+  --color-border-subtle: #909192;
+
+  /* Typography Colors */
+  --color-text-main: #0F172A;
+  --color-text-muted: #475569;
+  --color-text-light: #F1F5F9;
+  --color-whatsapp: #25D366;
+
+  /* Fonts */
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* --- SISTEMA DE TAMANHO DE FONTES (FONT SIZE) --- */
+    --font-size-xxs: 1rem;  /* 10px */
+    --font-size-xs: 1.2rem;  /* 12px */
+    --font-size-sm: 1.4rem;  /* 14px */
+ 
+    --font-size-md: 1.6rem;  /* 16px */
+    --font-size-lg: 2rem;    /* 20px */
+    --font-size-xl: 2.4rem;  /* 24px */
+
+    --font-size-2xl: 3.2rem; /* 32px */
+    --font-size-3xl: 4rem;   /* 40px */
+    --font-size-4xl: 5.6rem; /* 56px */
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-semiBold: 600;
+    --font-weight-extraBold: 800;
+
+    /* --- SISTEMA DE ALTURA DE LINHA (LINE HEIGHT) --- */
+    --line-height-none: 1;    
+    --line-height-tight: 1.2;  
+    --line-height-snug: 1.4;   
+    --line-height-body: 1.6;   
+    --line-height-loose: 1.8;   
+
+
+  /* ==========================================
+       BORDER RADIUS
+      ========================================== */
+
+    --radius-xs: 0.2rem;      /* 2px  - Elementos pequenos */
+    --radius-sm: 0.4rem;      /* 4px  - Elementos pequenos */
+    --radius-md: 0.8rem;      /* 8px  - Padrão do site */
+    --radius-lg: 1.6rem;      /* 16px - Elementos grandes */
+    --radius-xl: 2.4rem;      /* 24px - Blocos imponentes */
+    --radius-full: 999.9rem;  /* Totalmente redondo */
+
+  /* ==========================================
+   SPACING
+   ========================================== */
+
+    --spacing-xxs: 0.2rem;  /* 2px  - Distância mínima */
+    --spacing-xs:  0.4rem;  /* 4px  - Espaços muito pequenos */
+    --spacing-sm:  0.8rem;  /* 8px  - Interno de botões */
+    --spacing-md:  1.6rem;  /* 16px - Espaçamento padrão */
+    --spacing-lg:  2.4rem;  /* 24px - Entre elementos */
+    --spacing-xl:  3.2rem;  /* 32px - Entre blocos */
+    --spacing-xxl: 8rem;  /* 80px - Entre seções */
+
+    /* ==========================================
+   SISTEMA DE SOMBRAS (BOX SHADOW)
+   ========================================== */
+    --shadow-sm: 0 0 1px 2px rgba(209, 209, 209, 0.1);  
+    --shadow-md: 0 4px 6px rgba(209, 209, 209, 0.1);   
+    --shadow-lg: 0 10px 15pxrgba(209, 209, 209, 0.1); 
+    --shadow-xl: 0 20px 25px rgba(184, 184, 184, 0.15); 
+    --shadow-focus: 0 0 0 3px rgba(0, 132, 255, 0.26);
+
+
+  /* ==========================================
+   SISTEMA DE TRANSIÇÕES (ANIMATION)
+   ========================================== */
+    --transition-fast:    100ms ease-out;  
+    --transition-default: 200ms ease;     
+    --transition-slow:    350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}

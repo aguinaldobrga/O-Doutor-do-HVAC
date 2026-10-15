@@ -1,0 +1,65 @@
+.carrosselConteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-dark);
+  width: 100%;
+
+  
+}
+.carrosseInterface {
+  display: flex;  
+  align-items: center;
+  padding: var(--spacing-xs);
+  max-width: 1200px;
+  width: 100%;
+ 
+}
+
+.carrosselItem {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.mapaTopo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+ 
+  color: var(--color-border-subtle);
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+
+}
+
+.mapaTopo:hover {
+  color: var(--color-text-light);
+}
+
+.selocontainer {
+  background-color: rgba(0, 132, 255, 0.26);
+  padding: var(--spacing-xxs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+}
+
+.selo {
+  display: flex;
+  align-items: center;
+   gap: var(--spacing-sm);
+   font-size: var(--font-size-xs);
+   color: var(--color-border-subtle);
+}
+
+.iconTelefone {
+  color: var(--color-whatsapp);
+  font-size: var(--font-size-sm);
+}
+
+.icon {
+  color: var(--color-brand-secondary);
+  font-size: var(--font-size-sm);
+}
+

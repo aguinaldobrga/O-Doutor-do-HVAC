@@ -1,0 +1,61 @@
+.carrosselConteiner {
+  overflow: hidden;
+  width: 100%;
+  background: var(--color-bg-main);
+  padding: 20px 0;
+  display: flex;
+  position: relative;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+/* Corrigido para carrosselTrack */
+.carrosselTrack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  gap: 48px;
+  animation: rolarInfinito 20s linear infinite;
+}
+
+/* Corrigido para pausar APENAS no hover */
+.carrosselConteiner:hover .carrosselTrack {
+  animation-play-state: paused;
+}
+
+.carrosselItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  flex-shrink: 0; /* Impede que os itens encolham */
+}
+
+.carrosselItem img {
+  max-width: 100%;
+  max-height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.carrosselItem img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes rolarInfinito {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
